@@ -1,9 +1,11 @@
-lst = [0] * 4
+a,b=map(int, input().split())
+arr = [0]*6
 
-a,b=map(int,input().split())
+for i in range(6):
+    arr[i] = a
+    a += 1
 
-lst[0] = a
-lst[2] = b
-
-for i in range(4):
-    print(lst[i], end='')
+    if(arr[i] > b):
+        break
+    
+    print(arr[i], end='')
